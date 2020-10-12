@@ -1,8 +1,6 @@
 # arraySortVisualization
 
 <<<<<<< HEAD
-
-=======
 >>>>>>> main
 This project is the creation of an array sorter; one that sorts the array visually, using different sorting methods, such as bubble sort, quick sort, etc..
 

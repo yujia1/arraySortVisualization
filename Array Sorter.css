@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+}
+h1 {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+
+    background:lightsteelblue;
+    padding: 10px;
+    margin: 0;
+}
+.sort_algorithm {
+    padding: 15px;
+}
+
+.sort_algorithm > input {
+    background: none;
+    border: skyblue;
+    color: black;
+    padding: 5px 32px;
+    text-align: center;
+    font-size: 25px;
+}
+.sort_algorithm > input:hover {
+    background-color:lightblue;
+    color: white;
+}
+.sort_algorithm > input:focus {
+    background-color: lightskyblue;
+    color: white;
+    outline: 0;
+}
+
+
+main {
+    margin: 0;
+}
+.wrapper >div{
+    border: 1px solid grey;
+    display: flex;
+}
+
+.page-sidebar {
+    padding: 2px;
+}
+.page-sidebar > button {
+    background: none;
+    border: skyblue;
+    color: black;
+    padding: 5px 32px;
+    text-align: center;
+    font-size: 15px;
+}
+.page-sidebar > button[type=range]{
+    background-color: skyblue;
+    cursor: pointer;
+}
+
+.page-sidebar > button:hover {
+    background-color:lightblue;
+    color: white;
+}
+.page-sidebar > button:focus {
+    background-color: lightskyblue;
+    color: white;
+    outline: 0;
+}
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> main

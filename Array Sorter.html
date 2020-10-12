@@ -6,6 +6,7 @@
     <title> Array Sorter </title>
     <link href = "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel = "stylesheet">
     <link rel = "stylesheet" href = "Array Sorter.css">
+    <link rel="stylesheet" href="style.css" >
 </head>
 
 <body>
@@ -13,7 +14,7 @@
         <h1>Array Sort</h1>
         <div class="sort_algorithm">
             <input type="button" value="Selection Sort" class="sortArray">
-            <input type="button" value="insertion Sort" class="sortArray">
+            <input type="button" value="Insertion Sort" class="sortArray">
             <input type="button" value="Merge Sort" class="sortArray">
             <input type="button" value="Quick Sort" class="sortArray">
         </div>
@@ -26,11 +27,10 @@
                 <p>Array Size</p>
                 <input id="array_size" type="range" min = 30 max = 200 step=1 value=80>
                 <p>Array Speed</p>
-                <input id="array_speed" type="range" min=1 max=5 step=1 value = 4 >
+                <input id="array_speed" type="range" min=1 max=5 step=1 value = 4>
                 
             </div>
             <div class="content">
-                <p>Array Performance</p>
                 <div id="array_container"></div>
             </div>
         </div>
@@ -39,21 +39,22 @@
     <footer>
         <div class="sort-link"></div>
             <ul>
-                <li><a href="">selection sort algorithm</a></li>
-                <li><a href="">merge sort algorithm</a></li>
-                <li><a href="">quick sort algorithm</a></li>
-                <li><a href="">heap sort algorithm</a></li>
+                <li><a href="https://www.geeksforgeeks.org/selection-sort/">selection sort algorithm</a></li>
+                <li><a href="https://www.geeksforgeeks.org/insertion-sort/">Insertion sort algorithm</a></li>
+                <li><a href="https://www.geeksforgeeks.org/merge-sort/">merge sort algorithm</a></li>
+                <li><a href="https://www.geeksforgeeks.org/quick-sort/">quick sort algorithm</a></li>
+                
             </ul>
     </footer>
 
     <!-- this is loaded at the end of body-->
-    <script src="./scripts/main.js"></script>
+    <script src="./src/main.js"></script>
     <!-- this is loaded after main.js-->
-    <script src="./scripts/visualizations.js"></script>
+    <!-- <script src="./scripts/visualizations.js"></script>
 
     <script src="./scripts/selection_sort.js"></script>
     <script src="./scripts/insertion_sort.js"></script>
     <script src="./scripts/merge_sort.js"></script>
-    <script src="./scripts/quick_sort.js"></script>
+    <script src="./scripts/quick_sort.js"></script> -->
 </body>
 </html>

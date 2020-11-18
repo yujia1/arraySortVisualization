@@ -8,4 +8,4 @@ The point of this site is to show people how these different algorithms sort arr
 User Features
 The user can choose which algorithm is used to sort the array.
 The user can change how large or small to make the array.
-The user can change the sorting speed (how fast or slow the animation is played).
+

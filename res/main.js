@@ -12,7 +12,7 @@ var algo_butt = document.querySelectorAll(".sort_algorithm button");
 
 // create array
 var div_sizes = [];
-var divs = []
+var divs = [];
 var margin_size = 0.1;
 var cont = document.getElementById("array_container"); // parent
 cont.style = "flex-direction:row";
@@ -23,11 +23,11 @@ input_arr.addEventListener("input", update_arr);
 function generate_arr() {
     cont.innerHTML = "";
     for (var i = 0; i < arr_size; i++) {
-        div_sizes[i] = Math.floor(Math.random() * 0.5 * (input_arr.max - input_arr.min)) + 10; // random hight of each column
+        div_sizes[i] = Math.floor(Math.random() * 0.5 * (input_arr.max - input_arr.min)) + 10; // random height of each column
         divs[i] = document.createElement("div");
 
         cont.appendChild(divs[i]); // add div under array_container
-        nargin_size = 0.1;
+        margin_size = 0.1;
         divs[i].style = " margin: 0%" + margin_size + "%; background-color:lightyellow ; width:" + (100 / arr_size - (2 * margin_size)) + "%; height:" + (div_sizes[i]) + "%;";
     }
 };
@@ -55,7 +55,7 @@ function disable_button() {
         algo_butt[i].disable = true;
         input_arr.disable = true;
 
-        input_gen.disbake = true;
+        input_gen.disable = true;
         input_speed.disable = true;
 
     }
@@ -69,6 +69,12 @@ function runalgo() {
             break;
 
         case "Quick": quickSort();
+            break;
+
+        case "Insertion": insertion();
+            break;
+
+        case "Selection": selection();
             break;
     }
 }

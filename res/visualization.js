@@ -40,7 +40,7 @@ function enable_buttons() {
             algo_butt[i].classList.add("butt_unselected");
             algo_butt[i].disable = false;
             input_arr.disable = false;
-            input_gen.disbake = false;
+            input_gen.disable = false;
             input_speed.disable = false;
         }
     }, vis_delay += delay_time)

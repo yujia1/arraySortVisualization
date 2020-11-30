@@ -2,27 +2,43 @@
 <html lang="en">
 
 <head>
+    <title>Array Sorter</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
-    <title> Array Sorter </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/styling.css">
 </head>
 
 <body>
     <header>
-        <h1>Array Sort</h1>
-        <div class="sort_algorithm">
+        <h1>Array Sorter</h1>
 
-            <button>Selection</button>
-            <button>Insertion</button>
-            <button>Merge</button>
-            <button>Quick</button>
+        <div class="sort_algorithm">
+            <button>Selection Sort</button>
+            <button>Insertion Sort</button>
+            <button>Merge Sort</button>
+            <button id="last-button">Quick Sort</button>
         </div>
     </header>
 
+    <hr>
+
     <main>
-        <div class="wrapper">
+        <section id="control-panel">
+            <div id="instructions">
+                <h2>Instructions</h2>
+
+                <ol>
+                    <li>Select your desired size.</li>
+                    <li>Select your desired speed.</li>
+                    <li>Click "Generate New Array"</li>
+                    <li>Click your desired algorithm,<br>and behold!</li>
+                </ol>
+            </div>
+
             <div class="page-sidebar">
                 <button id="array_generate">Generate New Array</button>
                 <p>Array Size</p>
@@ -30,29 +46,34 @@
                 <p>Array Speed</p>
                 <input id="array_speed" type="range" min=1 max=5 step=1 value=4>
 
+                <!-- IMPLEMENT STOP & RESET BUTTONS SOMEWHERE WITHIN THIS DIV PLEASE -->
+
             </div>
+        </section>
+
+        <div class="wrapper">
             <div class="content">
                 <div id="array_container"></div>
             </div>
         </div>
     </main>
 
-    <footer>
+    <!-- <footer>
         <div class="sort-link"></div>
         <ul>
-            <li><a href="https://www.geeksforgeeks.org/selection-sort/">selection sort algorithm</a></li>
-            <li><a href="https://www.geeksforgeeks.org/insertion-sort/">Insertion sort algorithm</a></li>
-            <li><a href="https://www.geeksforgeeks.org/merge-sort/">merge sort algorithm</a></li>
-            <li><a href="https://www.geeksforgeeks.org/quick-sort/">quick sort algorithm</a></li>
+            <li><a href="https://www.geeksforgeeks.org/selection-sort/">Selection Sort Algorithm</a></li>
+            <li><a href="https://www.geeksforgeeks.org/insertion-sort/">Insertion Sort Algorithm</a></li>
+            <li><a href="https://www.geeksforgeeks.org/merge-sort/">Merge Sort Algorithm</a></li>
+            <li><a href="https://www.geeksforgeeks.org/quick-sort/">Quick Sort Algorithm</a></li>
         </ul>
-    </footer>
+    </footer> -->
 
     <!-- this is loaded at the end of body-->
     <script src="./res/main.js"></script>
     <!-- this is loaded after main.js-->
     <script src="./res/visualization.js"></script>
     <script src="./res/merge.js"></script>
-    <script src="res/quick-sort.js"></script>
+    <script src="res/quick.js"></script>
     <script src="res/insertion.js"></script>
 
 </body>

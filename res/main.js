@@ -1,4 +1,3 @@
-
 // variables of generate, speed and size
 var input_arr = document.getElementById("array_size");
 
@@ -65,24 +64,16 @@ function runalgo() {
     disable_button();
     this.classList.add("butt_selected");
     switch (this.innerHTML) {
-        case "Merge": Merge();
+        case "Merge Sort": Merge();
             break;
 
-        case "Quick": quickSort();
+        case "Quick Sort": quickSort();
             break;
 
-        case "Insertion": insertion();
+        case "Insertion Sort": insertion();
             break;
 
-        case "Selection": selection();
+        case "Selection Sort": selection();
             break;
     }
 }
-
-
-
-
-
-
-
-

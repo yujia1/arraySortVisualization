@@ -27,7 +27,7 @@ function generate_arr() {
 
         cont.appendChild(divs[i]); // add div under array_container
         margin_size = 0.1;
-        divs[i].style = " margin: 0%" + margin_size + "%; background-color:lightyellow ; width:" + (100 / arr_size - (2 * margin_size)) + "%; height:" + (div_sizes[i]) + "%;";
+        divs[i].style = " margin: 0%" + margin_size + "%; background-color:#800020 ; width:" + (100 / arr_size - (2 * margin_size)) + "%; height:" + (div_sizes[i]) + "%;";
     }
 };
 
@@ -67,7 +67,7 @@ function runalgo() {
         case "Merge Sort": Merge();
             break;
 
-        case "Quick Sort": quickSort();
+        case "Quick Sort": Quick();
             break;
 
         case "Insertion Sort": insertion();

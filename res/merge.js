@@ -1,5 +1,3 @@
-
-
 function Merge() {
     vis_delay = 0;
 

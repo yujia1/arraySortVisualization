@@ -67,7 +67,7 @@ function runalgo() {
         case "Merge Sort": Merge();
             break;
 
-        case "Quick Sort": Quick();
+        case "Quick Sort": quickSort();
             break;
 
         case "Insertion Sort": insertion();

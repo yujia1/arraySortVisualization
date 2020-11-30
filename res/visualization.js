@@ -1,6 +1,4 @@
-
-
-var speed = 1000;
+var speed = 500;
 
 input_speed.addEventListener("input", vis_speed);
 
@@ -11,7 +9,7 @@ function vis_speed() {
             break;
         case 2: speed = 10;
             break;
-        case 3: speed = 10;
+        case 3: speed = 100;
             break;
         case 4: speed = 1000;
             break;

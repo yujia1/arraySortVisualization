@@ -3,7 +3,7 @@ var speed = 500;
 input_speed.addEventListener("input", vis_speed);
 
 function vis_speed() {
-    var arr_speed = input_speed.Value;
+    var arr_speed = input_speed.value;
     switch (parseInt(arr_speed)) {
         case 1: speed = 1;
             break;
@@ -11,9 +11,7 @@ function vis_speed() {
             break;
         case 3: speed = 100;
             break;
-        case 4: speed = 1000;
-            break;
-        case 1: speed = 10000;
+        case 4: speed = 500;
             break;
     }
     delay_time = 10000 / (Math.floor(arr_size / 10) * speed);
@@ -22,7 +20,6 @@ function vis_speed() {
 var delay_time = delayTime = 10000 / (Math.floor(arr_size / 10) * speed);
 
 var vis_delay = 0;
-
 
 function div_update(cont, height, color) {
     window.setTimeout(function () {

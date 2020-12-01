@@ -5,6 +5,7 @@ var arr_size = input_arr.value;
 
 var input_gen = document.getElementById("array_generate");
 var input_speed = document.getElementById("array_speed");
+var input_clear = document.getElementById("clear");
 
 // get all algo node
 var algo_butt = document.querySelectorAll(".sort_algorithm button");
@@ -18,6 +19,7 @@ cont.style = "flex-direction:row";
 
 input_gen.addEventListener("click", generate_arr);
 input_arr.addEventListener("input", update_arr);
+input_clear.addEventListener("click", clear);
 
 function generate_arr() {
     cont.innerHTML = "";
@@ -31,7 +33,9 @@ function generate_arr() {
     }
 };
 
-
+function clear(){
+    cont.innerHTML = "";
+}
 
 function update_arr() {
     arr_size = input_arr.value;
@@ -39,7 +43,6 @@ function update_arr() {
 }
 
 window.onload = update_arr();
-
 
 for (var i = 0; i < algo_butt.length; i++) {
     algo_butt[i].addEventListener("click", runalgo);

@@ -33,10 +33,10 @@ function enable_buttons() {
         for (var i = 0; i < algo_butt.length; i++) {
             algo_butt[i].classList = [];
             algo_butt[i].classList.add("butt_unselected");
-            algo_butt[i].disable = false;
-            input_arr.disable = false;
-            input_gen.disable = false;
-            input_speed.disable = false;
+            algo_butt[i].disabled = false;
+            input_arr.disabled = false;
+            input_gen.disabled = false;
+            input_speed.disabled = false;
         }
     }, vis_delay += delay_time)
 }

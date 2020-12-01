@@ -35,6 +35,14 @@ function generate_arr() {
 
 function clear(){
     cont.innerHTML = "";
+    for (var i = 0; i < algo_butt.length; i++) {
+        algo_butt[i].classList = [];
+        algo_butt[i].classList.add("butt_unselected");
+        algo_butt[i].disabled = false;
+        input_arr.disabled = false;
+        input_gen.disabled = false;
+        input_speed.disabled = false;
+    }
 }
 
 function update_arr() {
@@ -54,11 +62,11 @@ function disable_button() {
         algo_butt[i].classList = [];
         algo_butt[i].classList.add("butt_locked");
 
-        algo_butt[i].disable = true;
-        input_arr.disable = true;
+        algo_butt[i].disabled = true;
 
-        input_gen.disable = true;
-        input_speed.disable = true;
+        input_arr.disabled = true;
+        input_gen.disabled = true;
+        input_speed.disabled = true;
 
     }
 }

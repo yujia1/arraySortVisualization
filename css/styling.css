@@ -27,6 +27,7 @@ h1 {
 hr
 {
     width: 95%;
+    margin: 25px auto;
 
     background-color: black;
 }
@@ -75,14 +76,18 @@ hr
 #control-panel
 {
     display: flex;
+
+    margin: 50px 0;
+}
+
+.bold
+{
+    font-weight: bold;
 }
 
 #instructions
 {
-    display: flex;
-    flex-direction: column;
-
-    width: 20%;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -107,19 +112,19 @@ hr
     justify-content: space-evenly;
     align-items: center;
 
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
 .page-sidebar > button {
     transition: background-color 0.25s;
-    
-    height: 20%;
+
+    height: 100%;
     background: none;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 5px 50px;
+    padding: 10px 50px;
     border: 2px solid black;
 
     /* Removes unwanted border radius on buttons */
@@ -171,15 +176,41 @@ hr
 
 footer
 {
-    padding: 10px;
+    padding: 10px 0;
 
     background-color: #800020;
 }
 
 #footer-section
 {
+    display: flex;
+    
     width: 95%;
     margin: 0 auto;
+}
+
+#footer-links
+{
+    width: 15%;
+    padding-right: 15px;
+}
+
+#footer-text
+{
+    width: 70%;
+    padding: 0 20px;
+}
+
+#footer-time-complexities
+{
+    width: 15%;
+    padding-left: 15px;
+}
+
+ul, li
+{
+    margin: 0;
+    padding: 0;
 }
 
 ul
@@ -196,11 +227,21 @@ a
 {
     transition: color 0.25s;
 
-    color: white;
+    color: #d4af37;
     text-decoration: none;
 }
 
 a:hover
 {
-    color: #d4af37;
+    color: white;
+}
+
+p
+{
+    color: white;
+}
+
+.complexities
+{
+    color: white;
 }

@@ -31,20 +31,20 @@
 
     <hr>
 
+    <div id="instructions">
+        <h2>Instructions</h2>
+
+        <span><span class="bold">1.</span> Select your desired size.</span>
+        <span><span class="bold">2.</span> Select your desired speed.</span>
+        <span><span class="bold">3.</span> Click "Generate New Array"</span>
+        <span><span class="bold">4.</span> Click your desired algorithm, and behold!</span>
+        <span><span class="bold">5.</span> Use the "Stop" button to stop the sorting process.</span>
+    </div>
+
+    <hr>
+
     <main>
         <section id="control-panel">
-            <div id="instructions">
-                <h2>Instructions</h2>
-
-                <ol>
-                    <li>Select your desired size.</li>
-                    <li>Select your desired speed.</li>
-                    <li>Click "Generate New Array"</li>
-                    <li>Click your desired algorithm,<br>and behold!</li>
-                    <li>Use the "Stop" button to stop<br>the sorting process.</li>
-                </ol>
-            </div>
-
             <div class="page-sidebar">
                 <button id="array_generate">Generate New Array</button>
                 <span>Array Size</span>
@@ -65,13 +65,44 @@
 
     <footer>
         <section id="footer-section">
-            <h3>More On Algorithms</h3>
-            <ul>
-                <li><a href="https://www.geeksforgeeks.org/selection-sort/">Selection Sort Algorithm</a></li>
-                <li><a href="https://www.geeksforgeeks.org/insertion-sort/">Insertion Sort Algorithm</a></li>
-                <li><a href="https://www.geeksforgeeks.org/merge-sort/">Merge Sort Algorithm</a></li>
-                <li><a href="https://www.geeksforgeeks.org/quick-sort/">Quick Sort Algorithm</a></li>
-            </ul>
+            <div id="footer-links">
+                <h3>Links</h3>
+
+                <ul>
+                    <li><a href="https://www.geeksforgeeks.org/selection-sort/">Selection Sort Algorithm</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/insertion-sort/">Insertion Sort Algorithm</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/merge-sort/">Merge Sort Algorithm</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/quick-sort/">Quick Sort Algorithm</a></li>
+                </ul>
+            </div>
+
+            <div id="footer-text">
+                <h3 id="definition-header">The Importance of Time Complexity</h3>
+
+                <p>
+                    Time complexity is the amount of time it takes for a computer to run an algorithm. Good software
+                    engineering practice involves writing efficient algorithms, as doing otherwise can have serious
+                    consequences for both the user and the client.
+                </p>
+
+                <p>
+                    Time complexity is measured in "Big O" notation, and there are certain standards in the software
+                    engineering world that developers are supposed to work with. The purpose of this site is to visually
+                    show you the time complexity of four well known algorithms. More information on each can be read
+                    using the links to the left.
+                </p>
+            </div>
+
+            <div id="footer-time-complexities">
+                <h3>Time Complexities</h3>
+
+                <ul>
+                    <li class="complexities">Selection Sort: O(n<sup>2</sup>)</li>
+                    <li class="complexities">Insertion Sort: O(n<sup>2</sup>)</li>
+                    <li class="complexities">Merge Sort: O(n * log(n))</li>
+                    <li class="complexities">Quick Sort: O(n<sup>2</sup>)</li>
+                </ul>
+            </div>
         </section>
     </footer>
 
@@ -83,7 +114,6 @@
     <script src="res/quick.js"></script>
     <script src="res/insertion.js"></script>
     <script src="res/selection.js"></script>
-
 </body>
 
 </html>

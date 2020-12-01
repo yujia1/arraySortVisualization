@@ -41,18 +41,18 @@
                     <li>Select your desired speed.</li>
                     <li>Click "Generate New Array"</li>
                     <li>Click your desired algorithm,<br>and behold!</li>
+                    <li>Use the "Stop" button to stop<br>the sorting process.</li>
                 </ol>
             </div>
 
             <div class="page-sidebar">
                 <button id="array_generate">Generate New Array</button>
-                <p>Array Size</p>
+                <span>Array Size</span>
                 <input id="array_size" type="range" min=30 max=200 step=1 value=80>
-                <p>Array Speed</p>
+                <span>Array Speed</span>
                 <input id="array_speed" type="range" min=1 max=5 step=1 value=4>
 
-                <!-- IMPLEMENT STOP & RESET BUTTONS SOMEWHERE WITHIN THIS DIV PLEASE -->
-
+                <button id="stop-button">Stop</button>
             </div>
         </section>
 
@@ -63,15 +63,17 @@
         </div>
     </main>
 
-    <!-- <footer>
-        <div class="sort-link"></div>
-        <ul>
-            <li><a href="https://www.geeksforgeeks.org/selection-sort/">Selection Sort Algorithm</a></li>
-            <li><a href="https://www.geeksforgeeks.org/insertion-sort/">Insertion Sort Algorithm</a></li>
-            <li><a href="https://www.geeksforgeeks.org/merge-sort/">Merge Sort Algorithm</a></li>
-            <li><a href="https://www.geeksforgeeks.org/quick-sort/">Quick Sort Algorithm</a></li>
-        </ul>
-    </footer> -->
+    <footer>
+        <section id="footer-section">
+            <h3>More On Algorithms</h3>
+            <ul>
+                <li><a href="https://www.geeksforgeeks.org/selection-sort/">Selection Sort Algorithm</a></li>
+                <li><a href="https://www.geeksforgeeks.org/insertion-sort/">Insertion Sort Algorithm</a></li>
+                <li><a href="https://www.geeksforgeeks.org/merge-sort/">Merge Sort Algorithm</a></li>
+                <li><a href="https://www.geeksforgeeks.org/quick-sort/">Quick Sort Algorithm</a></li>
+            </ul>
+        </section>
+    </footer>
 
     <!-- this is loaded at the end of body-->
     <script src="./res/main.js"></script>
